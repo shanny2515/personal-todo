@@ -1,21 +1,25 @@
 document.getElementById("theForm").addEventListener("submit", function(event) {
     event.preventDefault();
-    const username = document.getElementById("userName").value.trim(); 
+    const username = document.getElementById("userName").value.trim();
+    const phone = document.getElementById("phone").value .trim(); 
     const email = document.getElementById("email").value.trim();
-    const password = document.getElementById("password").value .trim();
 
-   if (username === "" || email === "" || password === "") {
-        alert("Please fill in all fields");
+
+   if (username === "" || email === "") {
+        alert("kindly fill in this field");
     }
-    else {
+    if (phone.length < 10 || phone.length > 10) {
+        alert("Phone number must be 10 digits");
+    }
+    
         const user = {
             username: username,
+            phone: phone,
             email: email,
-            password: password
         };
-        console.log(user);
-        alert("Form submitted successfully!");}
 
+        localStorage.setItem("user", JSON.stringify(user));
+        
         window.location.href = "to-do.html";
 } )
 
