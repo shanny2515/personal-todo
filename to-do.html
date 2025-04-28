@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My To Do list</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./todo.js" defer></script>
 </head>
 <body>
     <h1 id="entranceMessage"></h1>
+    <h3>Here is your To Do list: </h3>
+    <input type="text" id="toDoInput" placeholder="Enter a new task">
+    <button afterClicking = "addTodo()">Add Task</button>
+
+    <ul id="todolist"></ul>
     
 </body>
 </html>
