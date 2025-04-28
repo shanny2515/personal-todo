@@ -18,9 +18,11 @@ document.getElementById("theForm").addEventListener("submit", function(event) {
             email: email,
         };
 
-        localStorage.setItem("user", JSON.stringify(user));
+        localStorage.setItem("currentUser", JSON.stringify(user));
         
         window.location.href = "to-do.html";
 } )
+
+
 
    
