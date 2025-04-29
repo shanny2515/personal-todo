@@ -100,5 +100,9 @@ button:active{
     font-family: monospace;
     padding-bottom: 20px;
 }
+.social {
+    display: inline;
+    align-items: center;
+}
 
    
