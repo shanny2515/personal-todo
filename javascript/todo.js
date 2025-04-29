@@ -1,16 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
     const user = JSON.parse(localStorage.getItem("currentUser"));
-    if (!user || !user.username || !user.phone || !user.email) {
+    if (!user || !user.userName || !user.phone || !user.email) {
         window.location.href = "index.html";
         return;
     } else {
-        document.getElementById("entranceMessage").innerText = `Welcome ${user.username}!`;
+        document.getElementById("entranceMessage").innerText = `Welcome ${user.userName}!`;
         loadTodos();
     }
 });
 
 function addTodo() {
-    const todoInput = document.getElementById("todoInput");
+    const todoInput = document.getElementById("toDoInput");
     const todoText = todoInput.value.trim();
     if (todoText === "") {
         alert("Please enter a to-do item.");
@@ -24,7 +24,7 @@ function addTodo() {
 }
 
 function loadTodos() {
-    const todolist = document.getElementById("todoList");
+    const todolist = document.getElementById("toDoList");
     todolist.innerHTML = "";
     const todos = JSON.parse(localStorage.getItem("todos")) || [];
     todos.forEach((todo, index) => {
@@ -37,7 +37,7 @@ function loadTodos() {
         };
 
         const trashIcon = document.createElement("span");
-        trashIcon.textContent = "🗑️";
+        trashIcon.textContent = "🗑️"; 
         trashIcon.className = "trash-icon";
         trashIcon.onclick = function(event) {
             event.stopPropagation(); 
