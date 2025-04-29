@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
-    <script src="./index.js" defer></script>
-    <title></title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/index.css" />
+  <script src="./javascript/index.js" defer></script>
+  <title>PersonalTodo.</title>
 </head>
 <body>
-    <form id="theForm">
-        <div>
-             <label for="UserName">User Name:</label><br>
-            <input type="text" name="UserName" id="UserName"><br></br>
-        </div>
-        <div>
-            <label for="phone">Phone Number:</label><br>
-            <input type="phone" name="phone" id="phone"><br></br>
-        </div>
-        <div>
-            <label for="email">Email:</label><br>
-            <input type="email" name="email" id="email"><br></br> 
-        </div>
-        
-        <input type="submit" value="Save Entry" a href>
-    </form>
+  <div id="intro">
+    <h1>Welcome to your personal Organiser.</h1>
+  <h3>To begin,please fill in your details below.</h3>
+  </div>
+  <p>This will help you  personalize your to-do list experience.</p>
+
+  <form id="myForm">
+    <input type="text" name="userName" id="userName" placeholder="Full Name" required /><br><br>
+    <input type="text" name="userPhone" id="phone" placeholder="Phone" required /><br><br>
+    <input type="email" name="userEmail" id="email" placeholder="Email" required /><br><br>
+    <input type="submit" value="Save Entry" />
+  </form>
+  <footer>
+    <h3>@copyright 2025.All rights reserved</h3>
+    <h4>By Shania Damar.</h4>
+  </footer>
 </body>
 </html>
