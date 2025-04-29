@@ -59,3 +59,46 @@ footer{
     background-color: lightblue;
     padding: 10px;
 }
+#entranceMessage{
+    color: #338ba8;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: 3vw;
+}
+button{
+    background-color: #ADD8E6;
+    
+}
+button:active{
+    background-color: #049af7;
+}
+#toDoList{
+    margin: 0 auto;
+    padding: 20px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: 50%;
+    margin-top: 30px;
+}
+.completed{
+    text-decoration: line-through;
+    color: #000;
+    cursor: pointer;
+}
+.trash-icon{
+    cursor: pointer;
+    margin-left: 100px;
+}
+#logout{
+    margin-top: 60px;
+
+}
+#h3{
+    font-family: monospace;
+    padding-bottom: 20px;
+}
+
+   
